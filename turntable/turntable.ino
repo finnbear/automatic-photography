@@ -23,8 +23,10 @@ void loop() {
   if (digitalRead(9) == LOW) {
     for (int i = 0; i < howMany; i++) {
       // Rotate the turntable into position
-      servo.write(30);
-      delay(howLong);
+      servo.write(10);
+      delay(howLong / 2);
+      servo.write(20);
+      delay(howLong / 2);
       servo.write(0);
       delay(250);
   
